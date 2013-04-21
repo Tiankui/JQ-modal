@@ -1,0 +1,25 @@
+/*
+ * 弹框长宽设定函数
+ * 主样式文件在modal.less
+ * eg:.modal-layout(400px,400px)
+ *
+ * Author: zhouweiping(Tiankui)
+ * Email: eric.prototype@gmail.com
+ * Data: 2013-04-18
+ *
+ * 跟着红尘,跟着我浪迹一生
+ */
+
+.modal-layout(@width,@height){
+  .modal{
+    width: @width;
+    height: @height;
+    .shadow{
+      height: @height - 20;
+    }
+    .wrapper{
+      width: @width - 20;
+      height: @height - 20;
+    }
+  }
+}
