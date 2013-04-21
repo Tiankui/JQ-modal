@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="quick-menu">
+      <div class="shorthand">
+        不会写代码的PM不是好QA。 早安，Baiduer~
+        <br />
+        2013年1月23日  星期三
+      </div>
+      <ul>
+        <li><a href="#">全站导航</a></li>
+        <% quickMenu.forEach(function(item,key){ %>
+          <li><a href="<%= item.url %>"><%= item.name %></a><a class="close" href="#">×</a></li>
+      <% }) %>
+        <li><a class="icon icon-add add"  id="J_quickMenu_add" href="#J_choose_sites"></a></li>
+      </ul>
+      <a class="icon icon-config config" id="J_quickMenu_config" href="#"></a>
+      <div id="J_choose_sites" style="display:none;">
+        <div class="shadow"></div>
+        <div class="wrapper">
+          <div class="title">
+            <span>添加导航</span>
+            <span class="small">(导航最多可添加5个)</span>
+          </div>
+          <form action=".">
+            <div class="clearfix">
+              <label for="">名称</label>
+              <input type="text" name="" id="" value="" />
+            </div>
+            <div class="clearfix">
+              <label for="">链接</label>
+              <input type="text" name="" id="" value="" />
+            </div>
+          </form>
+          <div class="sites-box">
+            <dl class="clearfix"><!--{{{-->
+              <dt>站内常用</dt>
+              <dd>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+              </dd>
+              <dt>站内常用</dt>
+              <dd>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+              </dd>
+              <dt>站内常用</dt>
+              <dd>
+                <a href="#">办公</a>
+                <a href="#">办公室</a>
+                <a href="#">办公室预</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+              </dd>
+              <dt>站内常用</dt>
+              <dd>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+              </dd>
+              <dt>站内常用</dt>
+              <dd>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+                <a href="#">办公室预定</a>
+              </dd>
+            </dl><!--}}}-->
+          </div>
+          <div class="modal-footer">
+            <a id="J_quickMenu_submit" class="modal-submit" href="#">确认添加</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
